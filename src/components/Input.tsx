@@ -1,13 +1,14 @@
 import React from "react";
 
 export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {
-  color?: "primary" | "secondary";
+  color?: "primary" | "secondary" | "bluegray";
   error?: boolean;
 };
 
 const COLOR = {
   primary: "border-primary-main",
   secondary: "border-secondary-main",
+  blugray: "border-gray-bluegray",
 };
 
 const Input = ({

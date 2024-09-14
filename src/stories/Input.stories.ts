@@ -27,6 +27,13 @@ export const Secondary: Story = {
   },
 };
 
+export const BlueGray: Story = {
+  args: {
+    placeholder: 'BlueGray Input',
+    color: 'bluegray',
+  },
+};
+
 export const Error: Story = {
   args: {
     placeholder: 'Error Input',
