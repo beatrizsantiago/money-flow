@@ -25,6 +25,7 @@ const Button = ({
   const textColor = color === "primary" ? "text-primary-main" : "text-secondary-main";
   const borderColor = color === "primary" ? "border-primary-main" : "border-secondary-main";
   const bgColor = color === "primary" ? "bg-primary-main" : "bg-secondary-main";
+  const hover = disabled ? '' : 'hover:bg-black hover:text-white hover:border-none';
 
   const defaultStyle =  outlined
     ? `bg-transparent ${textColor} border ${borderColor} border-2`
@@ -36,7 +37,8 @@ const Button = ({
       className={`
         ${disabledStyle}
         ${disabled ? '' : defaultStyle}
-        py-3 px-10 rounded-lg font-semibold hover:bg-transparent hover:text-gray-dark hover:border-none ${className}
+        ${hover}
+        py-3 px-10 rounded-lg font-semibold ${className}
       `}
       {...rest}
     >
