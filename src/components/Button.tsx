@@ -22,9 +22,13 @@ const Button = ({
 }:ButtonProps) => {
   const disabledStyle = disabled ? 'bg-transparent text-gray-dark border-none' : '';
 
+  const textColor = color === "primary" ? "text-primary-main" : "text-secondary-main";
+  const borderColor = color === "primary" ? "border-primary-main" : "border-secondary-main";
+  const bgColor = color === "primary" ? "bg-primary-main" : "bg-secondary-main";
+
   const defaultStyle =  outlined
-    ? `bg-transparent text-${COLOR[color]} border border-${COLOR[color]} border-2`
-    : `bg-${COLOR[color]} text-white`;
+    ? `bg-transparent ${textColor} border ${borderColor} border-2`
+    : `${bgColor} text-white`;
 
   return (
     <button
