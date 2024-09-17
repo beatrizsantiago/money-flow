@@ -2,7 +2,7 @@
 
 # Money Flow Design System
 
-<h4>Design system do Tech Challenge da Pós Tech FIAP.</h4>
+<h4>Design system do Tech Challenge da Pós Tech FIAP</h4>
 
 <b>Versão:</b> 1.0.0
 
@@ -13,6 +13,7 @@
 - [Vite](https://vitejs.dev/) para build e desenvolvimento;
 - [Typescript](https://www.typescriptlang.org/) para tipagem estática;
 - [Storybook](https://storybook.js.org/) para documentação dos componentes;
+- [date-fns](https://date-fns.org/) para lidar com datas;
 
 ## 🛠 Ferramentas
 - [VSCode](https://code.visualstudio.com/) como editor de código;
