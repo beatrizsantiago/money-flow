@@ -7,9 +7,14 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   outlined?: boolean;
 };
 
-const COLOR = {
-  primary: "primary-main",
-  secondary: "secondary-main",
+const OUTLINED_HOVER_COLOR = {
+  primary: "hover:bg-primary-transparent",
+  secondary: "hover:bg-secondary-transparent",
+};
+
+const DEFAULT_HOVER_COLOR = {
+  primary: "hover:bg-primary-hover",
+  secondary: "hover:bg-secondary-hover",
 };
 
 const Button = ({
@@ -25,7 +30,7 @@ const Button = ({
   const textColor = color === "primary" ? "text-primary-main" : "text-secondary-main";
   const borderColor = color === "primary" ? "border-primary-main" : "border-secondary-main";
   const bgColor = color === "primary" ? "bg-primary-main" : "bg-secondary-main";
-  const hover = disabled ? '' : 'hover:bg-black hover:text-white hover:border-none';
+  const hover = outlined ? OUTLINED_HOVER_COLOR[color] : DEFAULT_HOVER_COLOR[color];
 
   const defaultStyle =  outlined
     ? `bg-transparent ${textColor} border ${borderColor} border-2`
@@ -37,7 +42,7 @@ const Button = ({
       className={`
         ${disabledStyle}
         ${disabled ? '' : defaultStyle}
-        ${hover}
+        ${disabled ? '' : hover}
         py-3 px-10 rounded-lg font-semibold ${className}
       `}
       {...rest}
