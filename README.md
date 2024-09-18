@@ -1,4 +1,4 @@
-<img src="./src/assets/fiap_logo.png" width="200px" />
+<img src="https://github.com/beatrizsantiago/money-flow/blob/main/src/assets/fiap_logo.png" width="200px" />
 
 # Money Flow Design System
 
