@@ -1,6 +1,12 @@
 import React from 'react';
 
-const COLORS = {
+type ColorCategory = {
+  name: string;
+  value: string;
+  class: string;
+};
+
+const COLORS: { [key: string]: ColorCategory[] } = {
   primary: [
     {
       name: 'main',

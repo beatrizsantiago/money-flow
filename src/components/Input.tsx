@@ -8,7 +8,7 @@ export interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> 
 const COLOR = {
   primary: "border-primary-main",
   secondary: "border-secondary-main",
-  blugray: "border-gray-bluegray",
+  bluegray: "border-gray-bluegray",
 };
 
 const Input = ({
