@@ -4,8 +4,6 @@
 
 <h4>Design system do Tech Challenge da Pós Tech FIAP</h4>
 
-<b>Versão:</b> 1.0.0
-
 <b>Dependências:</b> react@18.3.1, react-dom@18.3.1
 
 ## 📌 Stack de Desenvolvimento

@@ -11,6 +11,9 @@ export default defineConfig({
       entryRoot: './src'
     }),
   ],
+  css: {
+    postcss: './postcss.config.js',
+  },
   build: {
     lib: {
       entry: resolve(__dirname, 'src/index.ts'),
@@ -18,7 +21,11 @@ export default defineConfig({
       fileName: (format) => `money-flow.${format}.js`,
     },
     rollupOptions: {
-      external: ['react', 'react-dom'],
+      external: [
+        'react',
+        'react-dom',
+        'tailwindcss',
+      ],
       output: {
         globals: {
           react: 'React',

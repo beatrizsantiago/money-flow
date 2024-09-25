@@ -1,7 +1,7 @@
 {
   "name": "@beatrizsantiago/money-flow",
   "private": false,
-  "version": "1.0.1",
+  "version": "1.0.6",
   "repository": "@beatrizsantiago/money-flow",
   "source": "./src/index.ts",
   "main": "./dist/money-flow.umd.js",
@@ -13,6 +13,9 @@
       "require": "./dist/money-flow.umd.js"
     }
   },
+  "files": [
+    "dist"
+  ],
   "type": "module",
   "scripts": {
     "dev": "vite",
