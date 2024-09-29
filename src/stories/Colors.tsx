@@ -12,6 +12,11 @@ const COLORS: { [key: string]: ColorCategory[] } = {
       name: 'main',
       value: '#004D61',
       class: 'bg-primary-main',
+    },
+    {
+      name: 'light',
+      value: '#DEE9EA',
+      class: 'bg-primary-light',
     }
   ],
   secondary: [
@@ -27,6 +32,11 @@ const COLORS: { [key: string]: ColorCategory[] } = {
     }
   ],
   gray: [
+    {
+      name: 'main',
+      value: '#8B8B8B',
+      class: 'bg-gray-main',
+    },
     {
       name: 'extra light',
       value: '#F8F8F8',
@@ -47,11 +57,6 @@ const COLORS: { [key: string]: ColorCategory[] } = {
       value: '#444444',
       class: 'bg-gray-dark',
     },
-    {
-      name: 'blue gray',
-      value: '#DEE9EA',
-      class: 'bg-gray-bluegray',
-    }
   ],
 };
 

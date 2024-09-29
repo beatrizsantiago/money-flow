@@ -10,6 +10,7 @@ export default {
       colors: {
         primary: {
           main: '#004D61',
+          light: '#DEE9EA',
           transparent: 'rgba(0, 77, 97, 0.1)',
           hover: 'rgba(0, 77, 97, 0.7)',
         },
@@ -25,7 +26,6 @@ export default {
           light: '#CCCCCC',
           medium: '#CBCBCB',
           dark: '#444444',
-          bluegray: '#DEE9EA',
         },
       },
       backgroundImage: {
