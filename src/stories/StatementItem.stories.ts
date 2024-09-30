@@ -16,15 +16,17 @@ type Story = StoryObj<typeof meta>;
 
 export const Deposit: Story = {
   args: {
-    kind: 'deposit',
+    kind: 'DEPOSIT',
     value: 100,
     date: '2021-01-01',
+    onEditClick: () => console.log('Edit'),
+    onDeleteClick: () => console.log('Delete'),
   },
 };
 
 export const Transfer: Story = {
   args: {
-    kind: 'transfer',
+    kind: 'TRANSFER',
     value: -100,
     date: '2021-02-01',
   },
