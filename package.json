@@ -1,7 +1,7 @@
 {
   "name": "@beatrizsantiago/money-flow",
   "private": false,
-  "version": "1.0.8",
+  "version": "1.0.9",
   "repository": "@beatrizsantiago/money-flow",
   "source": "./src/index.ts",
   "main": "./dist/money-flow.umd.js",
