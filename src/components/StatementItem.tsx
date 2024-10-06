@@ -32,12 +32,12 @@ const StatementItem = ({
         </p>
         <div className="flex">
           {onEditClick && (
-            <button className="text-secondary-main mr-1">
+            <button className="text-secondary-main mr-1" onClick={onEditClick}>
               <PencilSimple size={20} weight="fill" />
             </button>
           )}
           {onDeleteClick && (
-            <button className="text-red-600">
+            <button className="text-red-600" onClick={onDeleteClick}>
               <Trash size={20} weight="fill" />
             </button>
           )}
