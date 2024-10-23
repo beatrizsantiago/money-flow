@@ -25,7 +25,7 @@ const StatementItem = ({
   const formattedMoney = new Intl.NumberFormat('pt-BR', { style: 'currency', currency: 'BRL' }).format(value);
 
   return (
-    <div className="w-60 m-6">
+    <div className="w-full m-6">
       <div className="flex justify-between items-center">
         <p className="text-secondary-main text-sm font-semibold">
           {month}
