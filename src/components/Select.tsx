@@ -39,10 +39,12 @@ const Select = ({
         onClick={() => setIsOpen(!isOpen)}
       >
         {selected?.label || placeholder}
-        <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
-          <svg className="fill-current text-primary-main h-5 w-5" viewBox="0 0 20 20">
-            <path d="M7 10l5 5 5-5H7z" />
-          </svg>
+        <div className="px-2">
+          <div className="absolute inset-y-0 right-0 flex items-center px-3 pointer-events-none">
+            <svg className="fill-current text-primary-main h-5 w-5" viewBox="0 0 20 20">
+              <path d="M7 10l5 5 5-5H7z" />
+            </svg>
+          </div>
         </div>
       </div>
       {isOpen && (
