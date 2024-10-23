@@ -1,8 +1,8 @@
 {
-  "name": "@beatrizsantiago/money-flow",
+  "name": "money-flow",
   "private": false,
   "version": "1.0.10",
-  "repository": "@beatrizsantiago/money-flow",
+  "repository": "money-flow",
   "source": "./src/index.ts",
   "main": "./dist/money-flow.umd.js",
   "module": "./dist/money-flow.es.js",
@@ -23,9 +23,6 @@
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.7",

@@ -4,8 +4,6 @@
 
 <h4>Design system do Tech Challenge da Pós Tech FIAP</h4>
 
-<b>Dependências:</b> react@18.3.1, react-dom@18.3.1
-
 ## 📌 Stack de Desenvolvimento
 - [Tailwind](https://tailwindcss.com/) para estilização de componentes;
 - [Vite](https://vitejs.dev/) para build e desenvolvimento;
@@ -21,13 +19,13 @@
 Instalar as dependências
 
 ```bash	
-  yarn
+  npm install
 ```
 
 Iniciar o storybook
 
 ```bash
-  yarn storybook
+  npm run storybook
 ```
 
 Abra [http://localhost:6006/?path=/docs/money-flow--docs](http://localhost:6006/?path=/docs/money-flow--docs) em seu navegador para ver a documetação.
