@@ -40,7 +40,7 @@ const COLORS: { [key: string]: ColorCategory[] } = {
     {
       name: 'extra light',
       value: '#F8F8F8',
-      class: 'bg-gray-xlight',
+      class: 'bg-gray-100',
     },
     {
       name: 'light',

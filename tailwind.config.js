@@ -22,10 +22,11 @@ export default {
         },
         gray: {
           main: '#8B8B8B',
-          xlight: '#F8F8F8',
           light: '#CCCCCC',
           medium: '#CBCBCB',
           dark: '#444444',
+          '100': '#F8F8F8',
+          '600': '#767676',
         },
       },
       backgroundImage: {

@@ -25,7 +25,7 @@ const Button = ({
   className = "",
   ...rest
 }:ButtonProps) => {
-  const disabledStyle = disabled ? 'bg-transparent text-gray-dark border-none' : '';
+  const disabledStyle = disabled ? 'bg-gray-200 text-gray-dark border-none' : '';
 
   const textColor = color === "primary" ? "text-primary-main" : "text-secondary-main";
   const borderColor = color === "primary" ? "border-primary-main" : "border-secondary-main";
