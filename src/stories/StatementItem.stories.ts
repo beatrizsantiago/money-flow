@@ -26,8 +26,24 @@ export const Deposit: Story = {
 
 export const Transfer: Story = {
   args: {
-    kind: 'TRANSFER',
+    kind: 'DOC_TED',
     value: -100,
     date: '2021-02-01',
+  },
+};
+
+export const CurrencyExchange: Story = {
+  args: {
+    kind: 'CURRENCY_EXCHANGE',
+    value: -1000,
+    date: '2021-03-01',
+  },
+};
+
+export const Leasing: Story = {
+  args: {
+    kind: 'LEASING',
+    value: -1000,
+    date: '2021-04-01',
   },
 };

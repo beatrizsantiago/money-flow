@@ -4,7 +4,7 @@ import { ptBR } from 'date-fns/locale';
 import { PencilSimple, Trash } from '@phosphor-icons/react';
 
 export interface StatementItemProps {
-  kind: 'DEPOSIT' | 'TRANSFER';
+  kind: 'DEPOSIT' | 'DOC_TED' | 'CURRENCY_EXCHANGE' | 'LEASING';
   value: number;
   date: string;
   onEditClick?: () => void;
@@ -13,7 +13,9 @@ export interface StatementItemProps {
 
 const KIND_LABEL = {
   DEPOSIT: 'Depósito',
-  TRANSFER: 'Transferência',
+  DOC_TED: 'Transferência',
+  CURRENCY_EXCHANGE: 'Câmbio de Moeda',
+  LEASING: 'Empréstimo e Financiamento',
 };
 
 const StatementItem = ({
@@ -45,7 +47,7 @@ const StatementItem = ({
       </div>
 
       <div className="w-full flex justify-between items-center my-2">
-        <p>{KIND_LABEL[kind]}</p>
+        <p className="mr-4">{KIND_LABEL[kind]}</p>
         <p className="text-sm text-gray-main">
           {format(parseISO(date), 'dd/MM/yyyy')}
         </p>
