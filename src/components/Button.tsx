@@ -46,7 +46,7 @@ const Button = ({
         ${disabledStyle}
         ${disabled ? '' : defaultStyle}
         ${disabled ? '' : hover}
-        flex items-center py-3 px-10 rounded-lg font-semibold ${className}
+        flex items-center justify-center py-3 px-10 rounded-lg font-semibold ${className}
       `}
       {...rest}
     >
