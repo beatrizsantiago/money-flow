@@ -48,3 +48,11 @@ export const Disabled: Story = {
     disabled: true,
   },
 };
+
+export const Loading: Story = {
+  args: {
+    text: 'Loading Button',
+    loading: true,
+    disabled: true,
+  },
+};

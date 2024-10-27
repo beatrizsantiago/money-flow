@@ -1,3 +1,4 @@
+import { SpinnerGap } from "@phosphor-icons/react";
 import React from "react";
 
 export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElement> {
@@ -5,6 +6,7 @@ export interface ButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElemen
   color?: "primary" | "secondary";
   disabled?: boolean;
   outlined?: boolean;
+  loading?: boolean;
 };
 
 const OUTLINED_HOVER_COLOR = {
@@ -22,6 +24,7 @@ const Button = ({
   color = "primary",
   disabled = false,
   outlined = false,
+  loading = false,
   className = "",
   ...rest
 }:ButtonProps) => {
@@ -43,11 +46,14 @@ const Button = ({
         ${disabledStyle}
         ${disabled ? '' : defaultStyle}
         ${disabled ? '' : hover}
-        py-3 px-10 rounded-lg font-semibold ${className}
+        flex items-center py-3 px-10 rounded-lg font-semibold ${className}
       `}
       {...rest}
     >
       {text}
+      {loading && (
+        <SpinnerGap size={24} weight="bold" className="ml-2 animate-spin" />
+      )}
     </button>
   );
 };
